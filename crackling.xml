@@ -29,7 +29,7 @@
 
 <!-- Apps -->
 	<project name="CyanogenMod/android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="github" revision="cm-13.0" />
-	<project name="dadi11/du_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="m-caf" />
+	<project name="beroid/android_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="m-caf" />
 
 <!-- Ant -->
 	<project name="CyanogenMod/android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="cm-13.0"/>
