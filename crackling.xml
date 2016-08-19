@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+<!-- Remotes -->
+	<remote name="du-caf" fetch="https://github.com/DirtyUnicorns/" revision="refs/heads/m-caf" />
+	<remote name="cm" fetch="https://github.com/CyanogenMod/" revision="refs/heads/cm-13.0" />
+	<remote name="cm-caf" fetch="https://github.com/CyanogenMod/" revision="refs/heads/cm-13.0-caf" />
+	<remote name="beroid-cm" fetch="https://github.com/beroid/" revision="refs/heads/cm-13.0" />
+	<remote name="beroid-caf" fetch="https://github.com/beroid/" revision="refs/heads/m-caf" />
+
 <!-- Remove -->
 	<remove-project name="android_hardware_qcom_wlan" />
-	<remove-project name="platform/external/wpa_supplicant_8" />
 	<remove-project name="android_hardware_qcom_bt" />
 	<remove-project name="android_packages_apps_FMRadio" />
 
 <!-- Device -->
-	<project name="beroid/android_device_wileyfox_crackling" path="device/wileyfox/crackling" remote="github" revision="m-caf" />
-	<project name="beroid/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="m-caf" />
-	<project name="beroid/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="github" revision="cm-13.0" />
-	<project name="beroid/proprietary_vendor_wileyfox" path="vendor/wileyfox" remote="github" revision="cm-13.0" />
+	<project name="android_device_wileyfox_crackling" path="device/wileyfox/crackling" remote="beroid-caf" />
+	<project name="android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="beroid-caf" />
+	<project name="android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="beroid-cm" />
+	<project name="proprietary_vendor_wileyfox" path="vendor/wileyfox" remote="beroid-cm" />
 
 <!-- Hardware qcom -->
-	<project name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="cm-13.0" />
-	<project name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="github" revision="cm-13.0-caf" />
-	<project name="CyanogenMod/android_hardware_qcom_fm" path="hardware/qcom/fm" remote="github" revision="cm-13.0" />
-	<project name="CyanogenMod/android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="cm-13.0" />
-	<project name="CyanogenMod/android_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" remote="github" revision="cm-13.0-caf" />
+	<project name="android_hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="cm-caf" />
+	<project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="cm" />
+	<project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="cm" />
+	<project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" remote="cm-caf" />
 
 <!-- Other -->
-	<project name="temasek/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="github" revision="cm-13.0" />
-	<project name="DirtyUnicorns/android_vendor_qcom_opensource_dataservices"  path="vendor/qcom/opensource/dataservices" remote="github" revision="m-caf" />
-	<project name="DirtyUnicorns/android_external_connectivity" path="external/connectivity" remote="github" revision="m-caf" />
-	<project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-13.0" />
-	<project name="CyanogenMod/android_system_qcom" path="system/qcom" remote="github" revision="cm-13.0" />
+	<project name="android_vendor_qcom_opensource_dataservices"  path="vendor/qcom/opensource/dataservices" remote="du-caf" />
+	<project name="android_external_connectivity" path="external/connectivity" remote="du-caf" />
+	<project name="android_external_stlport" path="external/stlport" remote="cm" />
+	<project name="android_system_qcom" path="system/qcom" remote="cm" />
 
 <!-- Apps -->
-	<project name="CyanogenMod/android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="github" revision="cm-13.0" />
-	<project name="beroid/android_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="m-caf" />
+	<project name="android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="cm" />
+	<project name="android_packages_apps_Snap" path="packages/apps/Snap" remote="beroid-caf" />
 
 <!-- Ant -->
-	<project name="CyanogenMod/android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="cm-13.0"/>
-	<project name="CyanogenMod/android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="github" revision="cm-13.0"/>
-	<project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-13.0"/>
+	<project name="android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="cm" />
+	<project name="android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="cm" />
+	<project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="cm" />
 
 </manifest>
