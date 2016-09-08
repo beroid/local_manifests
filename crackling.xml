@@ -15,7 +15,6 @@
 	<remove-project name="android_system_vold" />
 	<remove-project name="platform/external/e2fsprogs" />
 
-
 <!-- Device -->
 	<project name="android_device_wileyfox_crackling" path="device/wileyfox/crackling" remote="beroid-caf" />
 	<project name="android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="beroid-caf" />
@@ -23,6 +22,7 @@
 	<project name="proprietary_vendor_wileyfox" path="vendor/wileyfox" remote="beroid-cm" />
 
 <!-- Hardware qcom -->
+	<project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="cm" />
 	<project name="android_hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="cm-caf" />
 	<project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="cm" />
 	<project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="cm" />
